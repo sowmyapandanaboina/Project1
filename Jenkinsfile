@@ -11,13 +11,13 @@ pipeline {
             }
         }
 
-        /* stage('Execute ansible playbook') {
+         stage('Execute ansible playbook') {
              steps {
                 sh """
                      ansible-playbook ansible.yaml
                  """
              }
-         }*/
+         }
 
         stage('Docker image creation') {
             steps {
